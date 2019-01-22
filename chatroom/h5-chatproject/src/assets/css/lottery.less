@@ -1,0 +1,62 @@
+.plan-container {
+    background: #fff;
+    ul {
+        li {
+            width: 100%;
+            height: 90px;
+            position: relative;
+            border-bottom: 5px solid #f2f2f2;
+            &:last-child {
+                border: none;
+            }
+            .plan {
+                margin: 0px 10px;
+                position: absolute;
+                top: 15px;
+                display: flex;
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+                .right-plan {
+                    width: calc(100vw - 100px);
+                    margin: 0px 5px;
+                    .right-plan-top {
+                        display: flex;
+                        justify-content: space-between;
+                        p {
+                            font-size: 14px;
+                            color: #444;
+                        }
+                        span {
+                            font-size: 14px;
+                            color: #888;
+                        }
+                    }
+                    .right-plan-blow {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 12px;
+                        .plan-blow-left {
+                            display: flex;
+                            p {
+                                font-size: 12px;
+                                color: #888;
+                            }
+                        }
+                        .plan-blow-right {
+                            display: flex;
+                            p {
+                                font-size: 14px;
+                                color: #444;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.am-drawer-content {
+    background: #fff;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1,
+            user-scalable=no">
+
+        <title>原生js彩色星星喷射特效</title>
+    </head>
+    <style type="text/css">
+*{
+padding: 0;margin: 0;
+}
+body{
+background: #fff;
+}
+</style>
+    <body>
+        <canvas id="canvas" width="" height=""></canvas>
+    </body>
+<script type="text/javascript">
+var Canvas = {};
+Canvas.anim = {
+        init:function(){
+        var canvas = document.getElementById('canvas');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+//设置画布
+    this.ctx = canvas.getContext('2d');
+    this.letters = '*******************';
+    this.cw = canvas.width; //获取画布宽
+    this.ch = canvas.height;//获取画布高
+    this.particles = [];
+    this.ps = null;
+},
+//执行动画
+render:function() {
+    this.ctx.clearRect(0,0,this.cw,this.ch);  
+//字母的属性
+//设置x轴中心点
+    var particle = {
+        x:this.cw/2, 
+        y:this.ch,
+        xSpeed:(Math.random()*20) - 10,
+        ySpeed:(Math.random()*20) - 10,
+        size:10,
+        character:this.letters[Math.floor(Math.random() * this.letters.length)],
+/*color:[155, 100, 50, .7]*/
+        color:function getRandomColor() {
+            return '#' +
+            (function(color) {
+                return(color += '0123456789abcdef' [Math.floor(Math.random() * 16)]) &&
+                    (color.length == 6) ? color : arguments.callee(color);
+                })('');
+        }
+
+
+}
+    this.particles.push(particle);
+    this.drawParticle();
+},
+//绘制字母
+drawParticle:function(){
+    var c = this.ctx;
+    var particleCount = this.particles.length;
+    for(var i = 0;i < particleCount;i++){
+    var particle = this.particles[i];
+//设置颜色hsla值
+//设置颜色文字
+    c.font = "12px sans-serif"; 
+    c.fillStyle = particle.color();
+    c.fillText(particle.character,particle.x,particle.y);
+//设置运动轨迹
+    particle.x += particle.xSpeed;
+    particle.y += particle.ySpeed;
+    particle.y *= 0.98;
+// document.body.style.backgroundColor = particle.color();
+}
+this.fadeParticle();
+},
+//背景透明
+fadeParticle:function() {
+    this.ctx.fillStyle = '#fff';
+    this.ctx.fillRect(0,0,0,0);
+    }
+}
+Canvas.anim.init();
+setInterval(function(){
+Canvas.anim.render();
+},20);
+
+
+</script>
+</html>

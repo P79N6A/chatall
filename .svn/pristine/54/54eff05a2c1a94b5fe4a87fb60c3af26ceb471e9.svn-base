@@ -1,0 +1,90 @@
+
+.regist-content {
+    width: calc(100vw - 50px);
+    margin: 0 auto;
+    position: relative;
+    .little-can {
+        width: 25px;
+        height: 2px;
+        border-top: 1px solid #dbdbdb;
+        position: absolute;
+        top: 144px;
+        left: -25px;
+        z-index: 1000;
+    }
+    .regist-bg {
+        img {
+            width: 580px;
+            height: 580px;
+            margin: 0 auto;
+            position: fixed;
+            top: -473px;
+            left: 50%;
+            transform: translate( -50%);
+        }
+    }
+    .regist-logo {
+        height: 72px;
+        width: 120px;
+        position: relative;
+        margin: 68px auto 0 auto;
+        text-align: center;
+        img {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+        }
+        p {
+            font-size: 14px;
+            line-height: 20px;
+            color: #666;
+        }
+    }
+    .regist-item-container {
+        margin-top: 129px;
+        height: calc(100vh - 180px);
+        .item-detail {
+            margin-top: -58px;
+            ul {
+                margin: 0 10px;
+                li {
+                    width: calc(100vw - 72px);
+                    height: 50px;
+                    display: flex;
+                    border-bottom: 1px solid #dbdbdb;
+                    &:last-child {
+                        border: none;
+                    }
+                    img {
+                        width: 19px;
+                        height: 21px;
+                        margin: 14px 20px 0 10px;
+                    }
+                    input {
+                        width: calc(100vw - 70px);
+                        margin-top: 6px;
+                        border: none;
+                        font-size: 15px;
+                        color: #444;
+                    }
+                    .regist-btn {
+                        width: calc(100vw - 40px);
+                        height: 44px;
+                        margin: 0 auto;
+                        border-radius: 22px;
+                        background: #EE0024;
+                        text-align: center;
+                        font-size: 16px;
+                        line-height: 42px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .am-navbar {
+        background: none;
+        height: 37px;
+    }
+}

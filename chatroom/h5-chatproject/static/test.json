@@ -1,0 +1,57 @@
+
+
+{
+    "list": [
+        {
+            "userId": "",
+            "userImage": "",
+            "userName": "",
+            "data": [
+                {
+                    "userId": "",
+                    "userImage": "",
+                    "userName": ""
+                },
+                {
+                    "userId": "",
+                    "userImage": "",
+                    "userName": ""
+                }
+            ]
+        },
+        {
+            "userId": "",
+            "userImage": "",
+            "userName": "",
+            "data": [
+                {
+                    "userId": "",
+                    "userImage": "",
+                    "userName": ""
+                },
+                {
+                    "userId": "",
+                    "userImage": "",
+                    "userName": ""
+                }
+            ]
+        },
+        {
+            "userId": "",
+            "userImage": "",
+            "userName": "",
+            "data": [
+                {
+                    "userId": "",
+                    "userImage": "",
+                    "userName": ""
+                },
+                {
+                    "userId": "",
+                    "userImage": "",
+                    "userName": ""
+                }
+            ]
+        }
+    ]
+}

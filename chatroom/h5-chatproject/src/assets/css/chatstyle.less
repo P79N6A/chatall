@@ -1,0 +1,381 @@
+
+
+    .special-msg {
+        width: 258px;
+        height: 25px;
+        margin: 5px auto 10px auto;
+        box-sizing: border-box;
+        padding: 0 10px;
+        display: flex;
+        background: #fff;
+        border-radius: 8px;
+        img {
+            width: 14px;
+            height: 16px;
+            margin: 4px 10px 0 0;
+        }
+        .happy {
+            margin-right: 7px;
+            font-size: 11px;
+            line-height: 20px;
+            color: #444;
+        }
+        .text-limit {
+            max-width: 70px; 
+            overflow: hidden; 
+            text-overflow:ellipsis; 
+            white-space: nowrap;
+        }
+        span {
+            margin-right: 7px;
+            font-size: 11px;
+            line-height: 20px;
+            color: #999;
+        }
+    }
+    .msg-content-common {
+        width: 80%;
+        margin: 5px 0 15px 0px;
+        display: flex;
+        .msg-common-header {
+            margin-right: 10px;
+            img {
+                width: 35px;
+                height: 35px;
+            }
+        }
+        .msg-common-content {
+            .common-content-header {
+                display: flex;
+                
+                p {
+                    margin-right: 5px;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: #888;
+                }
+            }
+            
+            .common-content {
+                // 红包消息
+                .redbag {
+                    width: 229px;
+                    height: 79px;
+                    position: relative;
+                    background: url("../images/hongbao/hongbaobg.png") no-repeat;
+                    background-size: 229px 79px;
+                    h1 {
+                        width: 140px; 
+                        overflow: hidden; 
+                        text-overflow:ellipsis; 
+                        white-space: nowrap;
+                        position: absolute;
+                        top: -5px;
+                        left: 56px;
+                        font-size: 14px;
+                        color: #fff;
+                    }
+                    p {
+                        position: absolute;
+                        top: 35px;
+                        left: 63px;
+                        font-size: 10px;
+                        color: #fff;
+                    }
+                    span {
+                        position: absolute;
+                        bottom: 0px;
+                        left: 17px;
+                        font-size: 12px;
+                        color: #888888;
+                    }
+                }
+                .redbag-me {
+                    width: 229px;
+                    height: 79px;
+                    position: relative;
+                    background: url("../images/hongbao/myselfbag.png") no-repeat;
+                    background-size: 229px 79px;
+                    h1 {
+                        width: 140px; 
+                        overflow: hidden; 
+                        text-overflow:ellipsis; 
+                        white-space: nowrap;
+                        position: absolute;
+                        top: -5px;
+                        left: 56px;
+                        font-size: 14px;
+                        color: #fff;
+                    }
+                    p {
+                        position: absolute;
+                        top: 35px;
+                        left: 63px;
+                        font-size: 10px;
+                        color: #fff;
+                    }
+                    span {
+                        position: absolute;
+                        bottom: 0px;
+                        left: 17px;
+                        font-size: 12px;
+                        color: #888888;
+                    }
+                }
+                .myself {
+                    min-width: 100px;
+                    max-width: 240px;
+                    height: auto;
+                    margin-right: 10px;
+                    padding: 7px 10px;
+                    position: relative;
+                    word-wrap: break-word;
+                    background: #4692E7;
+                    border-radius: 10px;
+                    font-size: 12px;
+                    text-align: left;
+                    color: #fff;
+                    &:after {
+                        content: ''; 
+                        position: absolute; 
+                        left: 99%;
+                        top: -1px;
+                        width: 10px;
+                        height: 9px;
+                        border-width: 0;
+                        border-style: solid;
+                        border-color: transparent;
+                        margin-left: -5px;
+                        border-bottom-width: 5px;
+                        border-bottom-color: currentColor;
+                        border-radius:0 0 22px 0;
+                        color:#4692E7;
+                    }
+                }   
+                .normal-chat {
+                    min-width: 100px;
+                    max-width: 240px;
+                    height: auto;
+                    margin-right: 10px;
+                    padding: 7px 10px;
+                    position: relative;
+                    word-wrap: break-word;
+                    border-radius: 10px;
+                    font-size: 12px;
+                    text-align: left;
+                    color: #444;
+                    background: #FEECEE;
+                    &:after {
+                        content: ''; 
+                        position: absolute; 
+                        right: 97%;
+                        top: -1px;
+                        width: 10px;
+                        height: 9px;
+                        border-width: 0;
+                        border-style: solid;
+                        border-color: transparent;
+                        margin-left: -5px;
+                        border-bottom-width: 5px;
+                        border-bottom-color: currentColor;
+                        border-radius:0 0 0 18px;
+                        color:#FEECEE;
+                    }
+                }
+            }
+        }
+    }
+
+
+.kefu {
+    width: 45px;
+    height: 14px;
+    margin-right: 4px;
+    background: url("../images/newlevel/kefu.png") !important;
+    background-size: 45px 14px;
+}
+.diwang {    
+    background: url("../images/newlevel/10.png");
+    width: 45px;
+    height: 14px;
+    margin-right: 4px;
+    margin-top: 2px;
+    background-size: 45px 14px !important;
+}
+.chengxiang {
+    width: 45px;
+    height: 14px;
+    margin-right: 4px;
+    margin-top: 2px;
+
+    background-size: 45px 14px !important;
+    background: url("../images/newlevel/9.png");
+}
+.xunfu {
+    width: 45px;
+    height: 14px;
+    margin-right: 4px;
+    margin-top: 2px;
+
+    background-size: 45px 14px !important;
+    background: url("../images/newlevel/8.png");
+}
+.zongdu {
+    width: 45px;
+    height: 14px;
+    margin-right: 4px;
+    margin-top: 2px;
+
+    background-size: 45px 14px !important;
+    background: url("../images/newlevel/7.png");
+}
+.zhifu {
+    width: 45px;
+    height: 14px;
+    margin-right: 4px;
+    margin-top: 2px;
+
+    background-size: 45px 14px !important;
+    background: url("../images/newlevel/6.png");
+}
+.tongpan {
+    width: 45px;
+    height: 14px;
+    margin-right: 4px;
+    margin-top: 2px;
+
+    background-size: 45px 14px !important;
+    background: url("../images/newlevel/5.png");
+}
+.zhixian {
+    width: 45px;
+    height: 14px;
+    margin-right: 4px;
+    margin-top: 2px;
+
+    background-size: 45px 14px !important;
+    background: url("../images/newlevel/4.png");
+}
+.dizhu {
+    width: 45px;
+    height: 14px;
+    margin-right: 4px;
+    margin-top: 2px;
+
+    background-size: 45px 14px !important;
+    background: url("../images/newlevel/3.png");
+}
+.nongmin {
+    width: 45px;
+    height: 14px;
+    margin-right: 4px;
+    margin-top: 2px;
+
+    background-size: 45px 14px !important;
+    background: url("../images/newlevel/2.png");
+}
+.huiyuan {
+    width: 45px;
+    height: 14px;
+    margin-right: 4px;
+    margin-top: 2px;
+
+    background-size: 45px 14px !important;
+    background: url("../images/newlevel/1.png");
+}
+.kefu-m {
+    width: 45px;
+    height: 14px;
+    margin-right: 4px;
+    background: url("../images/newlevel/kefu2.png") !important;
+    background-size: 45px 14px;
+}
+.diwang-m {    
+    background: url("../images/newlevel/diwang.png");
+    width: 45px;
+    height: 14px;
+    margin-right: 4px;
+    margin-top: 2px;
+    background-size: 45px 14px !important;
+}
+.chengxiang-m {
+    width: 45px;
+    height: 14px;
+    margin-right: 4px;
+    margin-top: 2px;
+
+    background-size: 45px 14px !important;
+    background: url("../images/newlevel/chengxiang.png");
+}
+.xunfu-m {
+    width: 45px;
+    height: 14px;
+    margin-right: 4px;
+    margin-top: 2px;
+
+    background-size: 45px 14px !important;
+    background: url("../images/newlevel/xunfu.png");
+}
+.zongdu-m {
+    width: 45px;
+    height: 14px;
+    margin-right: 4px;
+    margin-top: 2px;
+
+    background-size: 45px 14px !important;
+    background: url("../images/newlevel/zongdu.png");
+}
+.zhifu-m {
+    width: 45px;
+    height: 14px;
+    margin-right: 4px;
+    margin-top: 2px;
+
+    background-size: 45px 14px !important;
+    background: url("../images/newlevel/zhifu.png");
+}
+.tongpan-m {
+    width: 45px;
+    height: 14px;
+    margin-right: 4px;
+    margin-top: 2px;
+
+    background-size: 45px 14px !important;
+    background: url("../images/newlevel/tongpan.png");
+}
+.zhixian-m {
+    width: 45px;
+    height: 14px;
+    margin-right: 4px;
+    margin-top: 2px;
+
+    background-size: 45px 14px !important;
+    background: url("../images/newlevel/zhixian.png");
+}
+.dizhu-m {
+    width: 45px;
+    height: 14px;
+    margin-right: 4px;
+    margin-top: 2px;
+
+    background-size: 45px 14px !important;
+    background: url("../images/newlevel/dizhu.png");
+}
+.nongmin-m {
+    width: 45px;
+    height: 14px;
+    margin-right: 4px;
+    margin-top: 2px;
+
+    background-size: 45px 14px !important;
+    background: url("../images/newlevel/nongmin.png");
+}
+.huiyuan-m {
+    width: 45px;
+    height: 14px;
+    margin-right: 4px;
+    margin-top: 2px;
+
+    background-size: 45px 14px !important;
+    background: url("../images/newlevel/huiyuan.png");
+}

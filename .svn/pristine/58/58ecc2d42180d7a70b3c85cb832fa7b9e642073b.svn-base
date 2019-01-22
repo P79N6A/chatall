@@ -1,0 +1,267 @@
+.slide-left {
+  width: 270px;
+  height: calc(100vh);
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: -270px;
+  z-index: 100;
+
+  .switch-can {
+    width: 100%;
+    height: 48px;
+    display: flex;
+
+    p {
+      margin-left: 15px;
+      font-size: 14px;
+      line-height: 44px;
+      color: #444;
+    }
+  }
+
+  .user-container {
+    background: #f5f5f5;
+
+    .grey-line {
+      width: 100%;
+      height: 20px;
+      background: #f5f5f5;
+
+      p {
+        font-size: 12px;
+        line-height: 20px;
+        margin-left: 8px;
+        color: #888;
+      }
+    }
+
+    .userlist-can {
+      width: 271px;
+      height: 51px;
+      padding-top: 10px;
+      background: #fff;
+      // margin: 0 10px;
+      .userlist-can-child {
+        width: 250px;
+        height: 40px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #e5e5e5;
+
+        .userlist-child-left {
+          display: flex;
+
+          img {
+            width: 30px;
+            height: 30px;
+            margin: 0px 5px;
+            border-radius: 50%;
+          }
+
+          p {
+            font-size: 15px;
+            line-height: 30px;
+            color: #444;
+          }
+        }
+
+        .userlist-child-right {
+          img {
+            width: 42px;
+            height: 12px;
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.mask-layer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 99;
+}
+
+.changehei {
+  animation: newhei .5s;
+}
+
+.hei {
+  left: 0;
+}
+
+@keyframes newhei {
+  from {
+    left: -270px;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes newhei {
+  from {
+    left: -270px;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@-moz-keyframes newhei {
+  from {
+    left: -270px;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.blow-item-icon-can {
+  width: 100%;
+  height: 170px;
+  position: relative;
+
+  .blow-can-blow {
+    width: 100%;
+    height: 52px;
+    border-top: 1px solid #e5e5e5;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+
+    .icon-can {
+      width: 54px;
+      height: 52px;
+      border: 1px solid #e5e5e5;
+      border-left: none;
+      border-top: none;
+      text-align: center;
+
+      img {
+        width: 25px;
+        height: 25px;
+        margin-top: 3px;
+      }
+    }
+  }
+}
+
+.icon-can-bg {
+  background: #e5e5e5;
+}
+
+.emoji-bear-can {
+  height: 140px;
+  padding: 10px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+
+  img {
+    width: 24px;
+    height: 24px;
+    margin: 4px;
+  }
+}
+
+.qingping {
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  right: 15px;
+  bottom: 140px;
+  z-index: 9;
+  background: url("../images/qingping.png");
+  background-size: 25px 25px;
+}
+
+.close-slide-red {
+  width: 12px;
+  height: 12px;
+  position: fixed;
+  right: 13px;
+  top: 46%;
+  z-index: 9;
+  background: url("../images/hongbao/close.png");
+  background-size: 12px 12px;
+}
+
+.slide-red-bag {
+  width: 43px;
+  height: 33px;
+  position: fixed;
+  right: 8px;
+  top: 50%;
+  z-index: 9;
+  //   animation: fanzhuan 4s infinite;
+  //   -webkit-animation: fanzhuan 4s infinite;
+  //     -moz-animation: fanzhuan 4s infinite;
+  //     -o-animation: fanzhuan 4s infinite;
+  background: url("../images/hongbao/slidehongbao.png");
+  background-size: 43px 33px;
+}
+
+@keyframes fanzhuan {
+  from {
+    transform: rotateY(0)
+  }
+  to {
+    transform: rotateY(360deg)
+  }
+}
+
+@-o-keyframes fanzhuan {
+  from {
+    transform: rotateY(0)
+  }
+  to {
+    transform: rotateY(360deg)
+  }
+}
+
+@-moz-keyframes fanzhuan {
+  from {
+    transform: rotateY(0)
+  }
+  to {
+    transform: rotateY(360deg)
+  }
+}
+
+@-webkit-keyframes fanzhuan {
+  from {
+    transform: rotateY(0)
+  }
+  to {
+    transform: rotateY(360deg)
+  }
+}
+
+.weidu {
+  width: 23px;
+  height: 25px;
+  position: fixed;
+  right: 15px;
+  bottom: 100px;
+  z-index: 9;
+  text-align: center;
+  background: url("../images/tixing.png");
+  background-size: 23px 25px;
+
+  p {
+    font-size: 12px;
+    line-height: 24px;
+    color: #fff;
+  }
+}
